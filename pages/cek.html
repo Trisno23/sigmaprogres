@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cek Persyaratan</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <h2>Cek Persyaratan Awal</h2>
+  <form id="formCek">
+    <label>Tanggal Lahir: <input type="date" id="tanggalLahir" required></label>
+    <label>Pendidikan:
+      <select id="pendidikan">
+        <option value="SMA">SMA</option>
+        <option value="D3">D3</option>
+        <option value="S1">S1</option>
+      </select>
+    </label>
+    <label>Jenis Kelamin:
+      <select id="kelamin">
+        <option value="L">Laki-laki</option>
+        <option value="P">Perempuan</option>
+      </select>
+    </label>
+    <label>Tinggi (cm): <input type="number" id="tinggi"></label>
+    <label>Berat (kg): <input type="number" id="berat"></label>
+    <label>Status Pernikahan:
+      <select id="statusNikah">
+        <option value="Belum">Belum Menikah</option>
+        <option value="Sudah">Sudah Menikah</option>
+      </select>
+    </label>
+    <button type="submit">Cek Kelayakan</button>
+  </form>
+  <div id="hasilCek"></div>
+  <script src="../js/cekSyarat.js"></script>
+</body>
+</html>
